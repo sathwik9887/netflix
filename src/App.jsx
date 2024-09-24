@@ -1,5 +1,8 @@
+import Faq from './components/Faq';
 import Hello from './components/Hello';
 import Hero from './components/Hero';
+import More from './components/More';
+import Section from './components/Section';
 
 function App() {
   return (
@@ -17,6 +20,16 @@ function App() {
     
       <div className="relative z-20 flex justify-center items-center min-h-screen">
         <Hero />
+      </div>
+      <div className="bg-black relative z-20 flex justify-center items-center overflow-hidden border-t-2">
+        
+        <Section  />
+      </div>
+      <div className="bg-black relative z-20 flex  overflow-hidden">
+        <More  />
+      </div>
+      <div className="bg-black relative z-20 flex  overflow-hidden">
+        <Faq  />
       </div>
     </div>
   );
